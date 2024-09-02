@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Main</title>
+    <link rel="stylesheet" href="assest/css/normalize.css">
+    <link rel="stylesheet" href="CSS/main.css">
+    <link rel="stylesheet" href="CSS/Customer.css">
+    <link rel="stylesheet" href="CSS/Item.css">
+    <link rel="stylesheet" href="CSS/Order.css">
+    <link rel="stylesheet" href="assest/bootstrap/css/bootstrap.min.css">
+</head>
+<body>
+
+<ul class="nav justify-content-end">
+
+    <img id="sitelogo" src="assest/img/shopping-cart.png" alt="siteLogo">
+    <h3 id="logohead">Cyber Store</h3>
+    <h4 id="logosub">Online Shopping Site</h4>
+
+    <li class="nav-item">
+        <img src="assest/img/home_30px.png" alt="homeicon">
+        <a class="nav-link active" aria-current="page" id="home-nav" >Home</a>
+    </li>
+    <li class="nav-item">
+        <img src="assest/img/people_24px.png" alt="customericon">
+        <a class="nav-link" id="customer-nav">Customer</a>
+    </li>
+    <li class="nav-item">
+        <img src="assest/img/open_delivered_box_50px.png" alt="itemicon">
+        <a class="nav-link" id="item-nav">Item</a>
+    </li>
+    <li class="nav-item">
+        <img src="assest/img/buy_24px.png" alt="ordericon">
+            <a class="nav-link" id="order-nav">Order</a>
+    </li>
+</ul>
+
+<!--Menu Section-->
+<section id="menu-section" class="mainsec">
+    <section class="leftsec">
+
+        <h1 class="maintitle">Cyber Store</h1>
+        <h4 class="subtitle">Smarter Shopping, Better Living!</h4>
+        <img src="assest/img/img.png" class="img-fluid" alt="mainphoto">
+
+    </section>
+    <section class="rightsec">
+
+        <a id="customer-nav1">
+            <div class="custdiv">
+                <img src="assest/img/img_1.png" alt="Customerimg">
+                <h4 style="color: black">Customer</h4>
+            </div>
+        </a>
+        <a id="item-nav1">
+            <div class="itemdiv">
+                <img src="assest/img/img_2.png" alt="Itemimg">
+                <h4 style="color: black">Item</h4>
+            </div>
+        </a>
+        <a id="order-nav1">
+            <div class="orderdiv">
+                <img src="assest/img/img_3.png" alt="Orderimg">
+                <h4 style="color: black">Order</h4>
+            </div>
+        </a>
+
+    </section>
+
+</section>
+
+<!--Customer Section-->
+<section id="manage_customer">
+    <div class="maindiv">
+        <h2 id="divtitle1">Customer</h2>
+        <hr>
+        <div class="formdiv">
+            <form class="row g-3 needs-validation" novalidate>
+                <div class="col-md-4">
+                    <label for="customer-id" class="form-label">Customer ID</label>
+                    <input type="text" class="form-control" id="customer-id" required>
+                    <div class="valid-feedback">
+                        Looks good!
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <label for="customer-name" class="form-label">Customer Name</label>
+                    <input type="text" class="form-control" id="customer-name" required>
+                    <div class="valid-feedback">
+                        Looks good!
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <label for="customer-address" class="form-label">Customer Address</label>
+                    <input type="text" class="form-control" id="customer-address" required>
+                    <div class="valid-feedback">
+                        Looks good!
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <label for="customer-contact" class="form-label">Customer Contact</label>
+                    <input type="text" class="form-control" id="customer-contact" required>
+                    <div class="valid-feedback">
+                        Looks good!
+                    </div>
+                </div>
+                <div class="mt-5">
+                    <button type="button" class="btn btn-success">Submit</button>
+                    <button type="button" class="btn btn-primary">Update</button>
+                    <button type="button" class="btn btn-danger">Delete</button>
+                    <button type="button" class="btn btn-warning">Reset</button>
+                </div>
+            </form>
+        </div>
+        <div class="tablediv">
+            <div class="input-group mb-3">
+                <input type="text" class="form-control" placeholder="Search ID" aria-describedby="button-addon2">
+                <button class="btn btn-success" type="button" id="button-addon1">Search</button>
+            </div>
+            <table class="table">
+                <thead>
+                <tr>
+                    <th scope="col">Cust_ID</th>
+                    <th scope="col">Cust_Name</th>
+                    <th scope="col">Cust_Address</th>
+                    <th scope="col">Cust_Contact</th>
+                </tr>
+                </thead>
+                <tbody class="table-group-divider">
+                <tr>
+                    <th></th>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+</section>
+
+<!--Item Section-->
+<section  id="manage_item">
+
+    <div class="maindiv">
+        <h2 id="divtitle2">Item</h2>
+        <hr>
+        <div class="formdiv">
+            <form class="row g-3 needs-validation" novalidate>
+                <div class="col-md-4">
+                    <label for="item-id" class="form-label">Item ID</label>
+                    <input type="text" class="form-control" id="item-id" required>
+                    <div class="valid-feedback">
+                        Looks good!
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <label for="item-name" class="form-label">Item Name</label>
+                    <input type="text" class="form-control" id="item-name" required>
+                    <div class="valid-feedback">
+                        Looks good!
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <label for="item-price" class="form-label">Item Price</label>
+                    <input type="text" class="form-control" id="item-price" required>
+                    <div class="valid-feedback">
+                        Looks good!
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <label for="item-qty" class="form-label">Item Qty On Hand</label>
+                    <input type="text" class="form-control" id="item-qty" required>
+                    <div class="valid-feedback">
+                        Looks good!
+                    </div>
+                </div>
+                <div class="mt-5">
+                    <button type="button" class="btn btn-success">Submit</button>
+                    <button type="button" class="btn btn-primary">Update</button>
+                    <button type="button" class="btn btn-danger">Delete</button>
+                    <button type="button" class="btn btn-warning">Reset</button>
+                </div>
+            </form>
+        </div>
+        <div class="tablediv">
+            <div class="input-group mb-3">
+                <input type="text" class="form-control" id="search" placeholder="Search ID" aria-describedby="button-addon2">
+                <button class="btn btn-success" type="button" id="button-addon2">Search</button>
+            </div>
+            <table class="table">
+                <thead>
+                <tr>
+                    <th scope="col">Item_ID</th>
+                    <th scope="col">Item_Name</th>
+                    <th scope="col">Item_Price</th>
+                    <th scope="col">Item_Qty</th>
+                </tr>
+                </thead>
+                <tbody class="table-group-divider">
+                <tr>
+                    <th></th>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+</section>
+
+<!--Order Section-->
+<section id="manage_order">
+
+    <div class="maindiv">
+        <h2 id="divtitle3">Order</h2>
+        <hr>
+        <div class="formdiv">
+            <form class="row g-3 needs-validation" novalidate>
+                <div class="col-md-4">
+                    <label for="validationCustom01" class="form-label">Order ID</label>
+                    <input type="text" class="form-control" id="validationCustom01" required>
+                    <div class="valid-feedback">
+                        Looks good!
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <label for="validationCustom02" class="form-label">Customer ID</label>
+                    <input type="text" class="form-control" id="validationCustom02" required>
+                    <div class="valid-feedback">
+                        Looks good!
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <label for="validationCustom02" class="form-label">Customer Name</label>
+                    <input type="text" class="form-control" id="validationCustom03" required>
+                    <div class="valid-feedback">
+                        Looks good!
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <label for="validationCustom02" class="form-label">Item Code</label>
+                    <input type="text" class="form-control" id="validationCustom04" required>
+                    <div class="valid-feedback">
+                        Looks good!
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <label for="validationCustom02" class="form-label">Description</label>
+                    <input type="text" class="form-control" id="validationCustom05" required>
+                    <div class="valid-feedback">
+                        Looks good!
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <label for="validationCustom02" class="form-label">Unit Price</label>
+                    <input type="text" class="form-control" id="validationCustom06" required>
+                    <div class="valid-feedback">
+                        Looks good!
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <label for="validationCustom02" class="form-label">Qty On Hand</label>
+                    <input type="text" class="form-control" id="validationCustom07" required>
+                    <div class="valid-feedback">
+                        Looks good!
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <label for="validationCustom02" class="form-label">Order Qty</label>
+                    <input type="text" class="form-control" id="validationCustom08" required>
+                    <div class="valid-feedback">
+                        Looks good!
+                    </div>
+                </div>
+
+                <div class="mt-6">
+                    <button type="button" class="btn btn-warning">Cart</button>
+                </div>
+            </form>
+        </div>
+        <div class="tablediv">
+            <div class="input-group mb-3">
+                <input type="text" class="form-control" placeholder="Search ID" aria-describedby="button-addon2">
+                <button class="btn btn-success" type="button" id="button-addon3">Remove</button>
+            </div>
+
+            <table class="table">
+                <thead>
+                <tr>
+                    <th scope="col">Order ID</th>
+                    <th scope="col">Customer ID</th>
+                    <th scope="col">Customer Name</th>
+                    <th scope="col">Item ID</th>
+                    <th scope="col">Item Name</th>
+                    <th scope="col">Unit Price</th>
+                </tr>
+                </thead>
+                <tbody class="table-group-divider">
+                <tr>
+                    <th></th>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+</section>
+
+<script src="assest/bootstrap/js/bootstrap.min.js"></script>
+<script src="assest/lib/jquery.min.js"></script>
+
+<script>
+    $('#menu-section').css('display', 'block');
+    $('#manage_customer').css('display', 'none');
+    $('#manage_item').css('display', 'none');
+    $('#manage_order').css('display', 'none');
+
+    $('#home-nav').on('click', () => {
+        $('#menu-section').css('display', 'block');
+        $('#manage_customer').css('display', 'none');
+        $('#manage_item').css('display', 'none');
+        $('#manage_order').css('display', 'none');
+    })
+
+    $('#customer-nav').on('click', () => {
+        $('#menu-section').css('display', 'none');
+        $('#manage_customer').css('display', 'block');
+        $('#manage_item').css('display', 'none');
+        $('#manage_order').css('display', 'none');
+    })
+
+
+    $('#item-nav').on('click', () => {
+        $('#manage_item').css('display', 'block');
+        $('#menu-section').css('display', 'none');
+        $('#manage_customer').css('display', 'none');
+        $('#manage_order').css('display', 'none');
+    })
+
+
+    $('#order-nav').on('click', () => {
+        $('#manage_order').css('display', 'block');
+        $('#menu-section').css('display', 'none');
+        $('#manage_customer').css('display', 'none');
+        $('#manage_item').css('display', 'none');
+    })
+
+
+//    ------------------------Home Image navigation ------------------//
+
+    $('#customer-nav1').on('click', () => {
+        $('#menu-section').css('display', 'none');
+        $('#manage_customer').css('display', 'block');
+        $('#manage_item').css('display', 'none');
+        $('#manage_order').css('display', 'none');
+    })
+
+
+    $('#item-nav1').on('click', () => {
+        $('#manage_item').css('display', 'block');
+        $('#menu-section').css('display', 'none');
+        $('#manage_customer').css('display', 'none');
+        $('#manage_order').css('display', 'none');
+    })
+
+
+    $('#order-nav1').on('click', () => {
+        $('#manage_order').css('display', 'block');
+        $('#menu-section').css('display', 'none');
+        $('#manage_customer').css('display', 'none');
+        $('#manage_item').css('display', 'none');
+    })
+
+
+    //------------------------------Customer Form_________________________________//
+    //submit
+    $("button[type='button']").eq(0).on("click",()=>{
+        let c_id = $("#customer-id").val();
+        let c_name = $("#customer-name").val();
+        let c_address = $("#customer-address").val();
+        let c_contact = $("#customer-contact").val();
+
+        let newRow = $("<tr>").append(
+            $("<td>").text(c_id),
+            $("<td>").text(c_name),
+            $("<td>").text(c_address),
+            $("<td>").text(c_contact),
+        );
+
+        // Append the new row to the table body
+        $(".table tbody").append(newRow);
+
+        // Clear input fields after adding the data
+        $("#customer-id").val("");
+        $("#customer-name").val("");
+        $("#customer-address").val("");
+        $("#customer-contact").val("");
+
+        console.log(`customer_Id: ${c_id}\n customer_Name: ${c_name}\n customer_Address: ${c_address}\n customer_Contact: ${c_contact}\n `);
+
+        $('#customer-id').val('');
+        $('#customer-name').val('');
+        $('#customer-address').val('');
+        $('#customer-contact').val('');
+    })
+
+    // delication
+    $("tbody").on("click","tr",function (){
+        // console.log("hello");
+        let data_col = $(this).find("td");
+        console.log(data_col);
+
+        data_col.each(function (){
+            console.log($(this).text());
+
+
+        })
+    })
+
+    $("tbody").on("click", "tr", function () {
+
+        row_index = $(this).index();
+        let customer_id = $(this).find("td:eq(0)").text();
+        let customer_name = $(this).find("td:eq(1)").text();
+        let customer_address = $(this).find("td:eq(2)").text();
+        let customer_contact = $(this).find("td:eq(3)").text();
+
+        $('#customer-id').val(customer_id);
+        $('#customer-name').val(customer_name);
+        $('#customer-address').val(customer_address);
+        $('#customer-contact').val(customer_contact);
+    });
+
+    //update
+    $("button[type='button']").eq(1).on("click",()=>{
+        let c_id = $("#customer-id").val();
+        let c_name = $("#customer-name").val();
+        let c_address = $("#customer-address").val();
+        let c_contact = $("#customer-contact").val();
+
+        let record = `<td class="Customer ID:">${c_id}</td><td class="Customer Name:">${c_name}</td> <td class="Customer Address:">${c_address}</td><td class="Customer Contact:">${c_contact}`;
+
+        $("tbody>tr").eq(row_index).html(record)
+
+        $('#customer-id').val('');
+        $('#customer-name').val('');
+        $('#customer-address').val('');
+        $('#customer-contact').val('');
+    })
+
+    // delete
+    $("button[type='button']").eq(2).on("click",()=> {
+        $("tbody>tr").eq(row_index).remove();
+
+        $('#customer-id').val('');
+        $('#customer-name').val('');
+        $('#customer-address').val('');
+        $('#customer-contact').val('');
+    })
+
+    // reset
+    $("button[type='button']").eq(3).on("click",()=>{
+        $('#customer-id').val('');
+        $('#customer-name').val('');
+        $('#customer-address').val('');
+        $('#customer-contact').val('');
+    })
+
+
+//-----------------------------------Item Section----------------------------------------//
+    $("button[type='button']").eq(0).on("click",()=>{
+        let i_id = $("#item-id").val();
+        let i_name = $("#item-name").val();
+        let i_price = $("#item-price").val();
+        let i_qty = $("#item-qty").val();
+
+        let newRow = $("<tr>").append(
+            $("<td>").text(i_id),
+            $("<td>").text(i_name),
+            $("<td>").text(i_price),
+            $("<td>").text(i_qty),
+        );
+
+        // Append the new row to the table body
+        $(".table tbody").append(newRow);
+
+        // Clear input fields after adding the data
+        $("#item-id").val("");
+        $("#item-name").val("");
+        $("#item-price").val("");
+        $("#item-qty").val("");
+
+        console.log(`item_Id: ${i_id}\n item_Name: ${i_name}\n item_price: ${i_price}\n item_qty: ${i_qty}\n `);
+
+        $('#item-id').val('');
+        $('#item-name').val('');
+        $('#item-price').val('');
+        $('#item-qty').val('');
+    })
+
+    // delication
+    $("tbody").on("click","tr",function (){
+        // console.log("hello");
+        let data_col = $(this).find("td");
+        console.log(data_col);
+
+        data_col.each(function (){
+            console.log($(this).text());
+
+
+        })
+    })
+
+    $("tbody").on("click", "tr", function () {
+
+        row_index = $(this).index();
+        let item_id = $(this).find("td:eq(0)").text();
+        let item_name = $(this).find("td:eq(1)").text();
+        let item_price = $(this).find("td:eq(2)").text();
+        let item_qty = $(this).find("td:eq(3)").text();
+
+        $('#item-id').val(item_id);
+        $('#item-name').val(item_name);
+        $('#item-price').val(item_price);
+        $('#item-qty').val(item_qty);
+    });
+
+    //update
+    $("button[type='button']").eq(1).on("click",()=>{
+        let i_id = $("#item-id").val();
+        let i_name = $("#item-name").val();
+        let i_price = $("#item-price").val();
+        let i_qty = $("#item-qty").val();
+
+        let record = `<td class="Item ID:">${i_id}</td><td class="Item Name:">${i_name}</td> <td class="Item Price:">${i_price}</td><td class="Item Qty:">${i_qty}`;
+
+        $("tbody>tr").eq(row_index).html(record)
+
+        $('#item-id').val('');
+        $('#item-name').val('');
+        $('#item-price').val('');
+        $('#item-qty').val('');
+    })
+
+    // delete
+    $("button[type='button']").eq(2).on("click",()=> {
+        $("tbody>tr").eq(row_index).remove();
+
+        $('#item-id').val('');
+        $('#item-name').val('');
+        $('#item-price').val('');
+        $('#item-qty').val('');
+    })
+
+    // reset
+    $("button[type='button']").eq(3).on("click",()=>{
+        $('#item-id').val('');
+        $('#item-name').val('');
+        $('#item-price').val('');
+        $('#item-qty').val('');
+    })
+
+</script>
+</body>
+</html>
